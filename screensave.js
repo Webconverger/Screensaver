@@ -7,7 +7,9 @@ window.onload = function() {
 
 function inactive() {
 	// screen saver goes here
-	document.body.style.display = "none";
+	$('body').fadeOut(900, function() {
+		document.body.style.display = "none";
+	});
 }
 
 function resetTimer(e) {
@@ -17,3 +19,4 @@ function resetTimer(e) {
 	clearTimeout(screenTimer);
 	screenTimer = setTimeout(inactive, 2000);
 }
+
