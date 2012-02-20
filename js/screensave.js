@@ -7,14 +7,16 @@ window.onload = function() {
 
 function inactive() {
 	// screen saver goes here
-	$('body').fadeOut(900, function() {
-		document.body.style.display = "none";
+	$('#main').fadeOut(900, function() {
+		$('#main').css("display", "none");
+		$('#screensaver').css("display", "block");
 	});
 }
 
 function resetTimer(e) {
 	// undo screen saver here
-	document.body.style.display = "block";
+	$('#main').css("display", "block");
+	$('#screensaver').css("display", "none");
 	// reset timer
 	clearTimeout(screenTimer);
 	screenTimer = setTimeout(inactive, 2000);

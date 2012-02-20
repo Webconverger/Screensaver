@@ -4,16 +4,48 @@
 <meta charset="utf-8" />
 <title>HTML screensaver for use with Webconverger homepages</title>
 <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700' rel=stylesheet type='text/css'>
+<link href="css/bootstrap.css" rel="stylesheet">
 <script src="http://code.jquery.com/jquery-latest.js"></script>
-<script src="screensave.js"></script>
+<script src="js/bootstrap-carousel.js"></script>
+<script src="js/screensave.js"></script>
 <style>
 html, body {
 font-family: 'Open Sans', sans-serif;
 }
+#screensaver { display: none;
+               margin: 0 auto;
+               padding: 0;
+               width: 500px}
 </style>
+<script>
+$(function() {
+$('.carousel').carousel()
+});
+</script>
 </head>
 <body>
 
+<div id="screensaver" class="carousel slide">
+<div class="carousel-inner">
+<div class="item active">
+<img src="http://webconverger.com/slides/01.jpg">
+</div>
+<div class="item">
+<img src="http://webconverger.com/slides/02.jpg">
+</div>
+<div class="item">
+<img src="http://webconverger.com/slides/03.jpg">
+</div>
+<div class="item">
+<img src="http://webconverger.com/slides/04.jpg">
+</div>
+<div class="item">
+<img src="http://webconverger.com/slides/05.jpg">
+</div>
+</div>
+</div>
+
+<div id="main">
 <h1>Basic screensaver example</h1>
 
 <p>If the browser background is black, it works better.</p>
@@ -21,6 +53,7 @@ font-family: 'Open Sans', sans-serif;
 <pre>user_pref("browser.display.background_color", "#000000");</pre>
 
 <img src="http://webconverger.org/img/tux_and_html5_is_webc.png" alt="Linux and browser equals Webconverger" />
+</div>
 
 </body>
 </html>
