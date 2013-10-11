@@ -1,6 +1,7 @@
 video = document.createElement('video');
-video.setAttribute('src', '/movie.webm');
+video.setAttribute('src', '/attract/attract.webm');
 video.setAttribute('loop', 'loop');
+video.load();
 
 function attract() {
 	document.body.appendChild(video);
