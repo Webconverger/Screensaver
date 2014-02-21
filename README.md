@@ -12,3 +12,5 @@ attract.js contains:
 	pref("full-screen-api.approval-required", false);
 
 Which allows us to override fullscreen API restrictions.
+
+Update: Since February 2014, [Webconverger supports MP4 playback](https://github.com/Webconverger/webc/commit/f07f99a88617a07435bf9621c970b6562b64549b)
