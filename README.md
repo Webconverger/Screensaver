@@ -7,4 +7,6 @@ Demo Webconverger with this configuration:
 http://attract.webconverger.com/webconverger_security_policy/prefs.js tells
 Webconverger to allow us to override fullscreen API restrictions.
 
+Documentation: <http://webconverger.org/screensaver/>
+
 Update: Since February 2014, [Webconverger supports MP4 playback](https://github.com/Webconverger/webc/commit/f07f99a88617a07435bf9621c970b6562b64549b)
